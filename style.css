@@ -131,7 +131,7 @@ header.area {
 }
 
 a {
-  color: rgba(255, 255, 255, 1);
+  color: #7C7C7C;
   transition: color .25s;
 }
 
