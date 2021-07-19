@@ -131,11 +131,12 @@ header.area {
 }
 
 a {
-  color: #7C7C7C;
+  color: #7C024B ;
   transition: color .25s;
 }
 
 a:hover {
+  color: #D0011B;
   text-decoration: underline;
 }
 
