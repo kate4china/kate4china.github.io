@@ -3,165 +3,7 @@
 
 <head>
   <link rel="stylesheet" type="text/css" href="common.css">
-  <style>
-    .aboutBlock {
-      padding: 64px 0px 0px 8px;
-      height: 265px;
-    }
-
-    .aboutBlock h1 {
-      color: #CE0B24;
-      font-size: 40px;
-      margin-bottom: 4px;
-    }
-
-    .aboutBlock h2 {
-      color: #333333;
-      font-size: 40px;
-      margin-bottom: 7px;
-    }
-
-    .aboutBlock p {
-      color: #989898;
-      font-size: 18px;
-      margin-bottom: 4px;
-    }
-
-    .hitMeUp {
-      text-align: center;
-      padding: 54px 0px 0px 8px;
-      height: 262px;
-    }
-    .hitMeUp h1 {
-      color: #CE0B24;
-      font-size: 36px;
-      margin-bottom: 23px;
-    }
-
-    .hitMeUp p {
-      color: #6E6C6C;
-      font-size: 18px;
-      margin-bottom: 1px;
-    }
-
-    .grid {
-      width: 1008px;
-      margin: 0px auto;
-      overflow: hidden;
-    }
-
-    .gridbox {
-      position: relative;
-      float: left;
-      width: 320px;
-      height: 344px;
-      background-color: #F1F0F0;
-      margin: 4px;
-      border-radius: 6px;
-      overflow: hidden;
-    }
-
-    .gridbox img {
-      width: 100%;
-      height: 100%;
-      transition: all .725s;
-    }
-
-    .gridbox .hover {
-      opacity: 0;
-      transition: all .725s;
-      background: rgba(0, 0, 0, .60);
-      position: absolute;
-      top: 0px;
-      bottom: 0px;
-      left: 0px;
-      right: 0px;
-    }
-
-    .gridbox:hover img {
-      transform: scale(1.1);
-    }
-
-    .gridbox a:hover .hover {
-      opacity: 1;
-    }
-
-    .gridbox .hover .inner {
-      height: 80px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    .gridbox .hover .title {
-      font-size: 36px;
-      color: white;
-      text-align: center;
-    }
-
-    .gridbox .hover .sub {
-      font-size: 28px;
-      color: #D0011B;
-      text-align: center;
-    }
-
-    .bio {
-      text-align: center;
-      max-width: 600px;
-      margin: 0px auto;
-    }
-
-    .bio h1 {
-      margin: 64px 0px 10px 0px;
-      color: #CE0B24;
-      font-size: 36px;
-      margin-bottom: 23px;
-    }
-
-    .bio img {
-      margin: 10px 0px;
-    }
-
-    .bio p {
-      margin: 10px 0px;
-      color: #6E6C6C;
-      font-size: 18px;
-    }
-
-    @media only screen and (max-width: 1000px) {
-      .grid {
-        width: 710px;
-      }
-
-      .gridbox {
-        width: 220px;
-        height: 244px;
-      }
-    }
-
-    @media only screen and (max-width: 700px) {
-      .grid {
-        width: 474px;
-      }
-
-      .gridbox {
-        width: 220px;
-        height: 244px;
-      }
-    }
-
-    @media only screen and (max-width: 480px) {
-      .grid {
-        width: 340px;
-      }
-
-      .gridbox {
-        width: 320px;
-        height: 344px;
-      }
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 
 <body>
@@ -173,7 +15,8 @@
       <div class="links">
         <a href="https://www.linkedin.com/in/kate-von-houck-aa966466/" target="_blank">linkedin</a>
         <a href="/Kate%20von%20Houck.pdf">resume</a>
-        <a href="mailto:kate4china@gmail.com">contact</a>
+        <a href="about.html">about</a>
+        <a href="mailto:kate4china@gmail.com">contact</a>        
       </div>
     </div>
   </div>
@@ -339,20 +182,13 @@
     -->
   </div>
 
-  <div class="bio">
-    <h1>About</h1>
-    <img src="image/home/kate.png" width="160" height="160">
-    <p>Hey, Kate here. I have experience working in the software and video game industries.
-       I’m passionate about research, user testing, and user-centric design for websites and mobile apps.
-       I am focused on making great looking and fluid interfaces that feel natural and obvious to use.
-    </p>
-  </div>
+  
 
   <div class="hitMeUp">
     <div class="inner">
       <h1>Hit me up</h1>
-      <p><span style="color:#CE0B24">Thank you</span> for taking a look at my work and</p>
-      <p>learning about me. Feel free to say <span style="color:#CE0B24">hi</span>.</p>
+      <p><span class="text-primary">Thank you</span> for taking a look at my work and</p>
+      <p>learning about me. Feel free to say <span class="text-primary">hi</span>.</p>
       <a class="redButton" href="mailto:kate4china@gmail.com">
         SAY HELLO
       </a>
