@@ -1,85 +1,21 @@
+/* Base styles */
+@font-face {
+  font-family: "Apercu";
+  src: url(fonts/Apercu-Regular.otf) format("opentype");
+}
+
 * {
-  box-sizing: border-box;
-  padding: 0px;
   margin: 0px;
-  font-family: "Apercu", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: Apercu;
 }
 
-.header {
-  height: 75px;
-  border-top: 5px solid #CE0B24;
-  border-bottom: 1px solid #C4C4C4;
-}
-
-.inner {
-  width: 1008px;
-  margin: 0px auto;
-}
-
-.header .links {
-  display: block;
-  float: right;
-  padding: 24px 29px 0px 10px;
-  font-size: 16px;
-  line-height: normal;
-}
-
-.header .links a {
-  display: inline-block;
-  color: #7C7C7C;
-  text-decoration: none;
-  margin-left: 13px;
-}
-
-.header .links a:hover {
-  display: inline-block;
-  color: #3B3A3A;
-  text-decoration: none;
-  margin-left: 13px;
-}
-
-.header .logo {
-  position: relative;
-  top: 14px;
-  left: 4px;
-  display: inline;
-  margin: 0px 0px;
-  width: 40px;
-  height: 40px;
-  transition: opacity 500ms;
-}
-
-.header .logo:hover {
-  opacity: 0.60;
-}
-
-a.redButton {
-  display: inline-block;
-  color: #6E6C6C;
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: white;
+  font-family: "Apercu", sans-serif;
   font-size: 18px;
-  text-decoration: none;
-  border: 2px solid #CE0B24;
-  padding: 10px 0px;
-  width: 200px;
-  border-radius: 200px;
-  margin-top: 33px;
-  transition: all 500ms;
-  text-align: center;
-}
-
-a.redButton:hover {
-  background: #CE0B24;
-  color: white;
-  text-decoration: none;
-}
-
-.footer {
-  height: 35px;
-  margin-top: 134px;
-  text-align: center;
-  color: #B1B1B1;
-  font-size: 14px;
-  border-bottom: 5px solid #CE0B24;
 }
 
 /* Header Styles */
@@ -136,6 +72,62 @@ a.redButton:hover {
     color: var(--text-dark);
 }
 
+/* Section Styles */
+section {
+    position: relative;
+    display: block;
+    background-color: #FFFFFF;
+    padding: 100px 0px;
+    background: linear-gradient(to bottom, #FFFFFF 0%, #FFFFFF 100%);
+}
+
+section img {
+    display: block;
+    margin: 0px auto;
+    max-width: 80%;
+    height: auto;
+    transition: all .5s ease-in-out;
+}
+
+section .hover {
+    opacity: 0;
+    transition: all .725s;
+}
+
+section:hover img {
+    transform: scale(1.1);
+}
+
+section:hover .hover {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: rgba(0, 0, 0, .60);
+    opacity: 1;
+}
+
+section .hover .inner {
+    height: 130px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+section .hover .title {
+    font-size: 36px;
+    color: white;
+    text-align: center;
+}
+
+section .hover .sub {
+    font-size: 28px;
+    color: var(--primary-color);
+    text-align: center;
+}
+
 /* Footer Styles */
 .site-footer {
     height: 2.1875rem;
@@ -184,6 +176,11 @@ a.redButton:hover {
     .main-nav, .footer-content {
         max-width: 100%;
         padding: var(--spacing-sm);
+    }
+    
+    .nav-links {
+        flex-direction: column;
+        gap: var(--spacing-sm);
     }
 }
 
