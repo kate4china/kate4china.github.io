@@ -61,51 +61,27 @@ body {
   max-width: 37.5rem;
   margin: 0 auto;
   padding: var(--spacing-xxl) var(--spacing-md);
-  position: relative;
 }
 
-.bio::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 60px;
-  height: 4px;
-  background-color: var(--primary-color);
-  margin-top: var(--spacing-xl);
+.bio h1 {
+  margin: var(--spacing-xxl) 0 var(--spacing-sm) 0;
+  color: var(--primary-color);
+  font-size: 2.25rem;
+  margin-bottom: var(--spacing-lg);
 }
 
 .bio img {
-  margin: var(--spacing-xxl) auto var(--spacing-xl) auto;
+  margin: 0 auto var(--spacing-xl) auto;
   border-radius: 50%;
   display: block;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-}
-
-.bio img:hover {
-  transform: scale(1.05);
 }
 
 .bio p {
   margin: var(--spacing-sm) 0;
   color: var(--text-gray);
   font-size: 1.125rem;
-  line-height: 1.8;
+  line-height: 1.6;
   text-align: left;
-  position: relative;
-  padding: 0 var(--spacing-md);
-}
-
-.bio p::first-letter {
-  font-size: 2.5rem;
-  color: var(--primary-color);
-  font-weight: bold;
-  float: left;
-  margin-right: var(--spacing-xs);
-  line-height: 1;
-  margin-top: 0.2em;
 }
 
 /* Contact Section */
@@ -116,24 +92,12 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--background-light);
-  margin-top: var(--spacing-xxl);
 }
 
 .hitMeUp .inner {
   max-width: 37.5rem;
   margin: 0 auto;
   padding: 0 var(--spacing-md);
-}
-
-.hitMeUp .redButton {
-  margin-top: var(--spacing-lg);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.hitMeUp .redButton:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(206, 11, 36, 0.2);
 }
 
 .hitMeUp h1 {
