@@ -81,3 +81,114 @@ a.redButton:hover {
   font-size: 14px;
   border-bottom: 5px solid #CE0B24;
 }
+
+/* Header Styles */
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: white;
+    z-index: 1000;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #C4C4C4;
+    height: calc(2.5rem + (var(--header-padding) * 2));
+}
+
+.main-nav {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: var(--header-padding) var(--spacing-md);
+    height: 100%;
+}
+
+.nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo {
+    width: 2.5rem;
+    height: 2.5rem;
+    transition: opacity 500ms;
+}
+
+.logo:hover {
+    opacity: 0.60;
+}
+
+.nav-links {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.nav-links a {
+    color: var(--text-gray);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+    text-transform: lowercase;
+}
+
+.nav-links a:hover {
+    color: var(--text-dark);
+}
+
+/* Footer Styles */
+.site-footer {
+    height: 2.1875rem;
+    margin-top: 8.375rem;
+    text-align: center;
+    color: #B1B1B1;
+    font-size: 0.875rem;
+    border-bottom: 5px solid var(--primary-color);
+    background-color: #fff;
+}
+
+.footer-content {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 var(--spacing-md);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.footer-section {
+    margin: 0;
+    padding: 0;
+}
+
+.footer-section p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 80rem) {
+    .main-nav, .footer-content {
+        max-width: 60rem;
+    }
+}
+
+@media (max-width: 60rem) {
+    .main-nav, .footer-content {
+        max-width: 40rem;
+    }
+}
+
+@media (max-width: 40rem) {
+    .main-nav, .footer-content {
+        max-width: 100%;
+        padding: var(--spacing-sm);
+    }
+}
+
+@media (max-width: 30rem) {
+    .main-nav, .footer-content {
+        max-width: 21.25rem;
+    }
+}
