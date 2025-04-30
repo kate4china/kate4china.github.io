@@ -4,205 +4,22 @@
 <head>
   <title>Sharepoint Site Performance UX/UI Design by Kate von Houck</title>
   <meta name="viewport" content="width=device-width">
-  <link href='../../style.css' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="../../common.css">
-  <style>
-    @media screen and (max-width: 700px) {
-      .video-card {
-        margin: 60px 0px !important;
-      }
-    }
-
-    @media screen and (max-width: 400px) {
-      #headerimage {
-        height: 300px !important;
-      }
-      #overlayer {
-        margin-top: 370px !important;
-      }
-
-      .video-frame {
-        background-size: 200px, 280px !important;
-        padding-top: 0px !important;
-        width: 200px !important;
-        height: 280px !important;
-      }
-
-      .video-card {
-        margin: 60px 0px !important;
-        width: 200px !important;
-      }
-
-      video {
-        width: 164px;
-        height: 280px
-      }
-    }
-
-    body {
-      overflow-x: hidden;
-      background-color: white;
-      line-height: 28px;
-    }
-
-    #headerimage {
-      position: fixed;
-      top: 76px;
-      z-index: 0;
-      left: 50%;
-      transform: translate(-50%, 0);
-      width: 100%;
-      background: #F5F7F8;
-      height: 667px;
-    }
-
-    #headerimage img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    #overlayer {
-      padding-top: 1px;
-      position: relative;
-      background-color: white;
-      z-index: 1;
-      margin-top: 700px;
-    }
-
-    img {
-      display: block;
-      margin: 0px auto;
-      max-width: 80%;
-      height: auto;
-    }
-
-    h1 {
-      margin-top: 77px;
-      margin-bottom: 38px;
-      font-size: 32px;
-      font-weight: normal;
-      text-align: center;
-      color: #00A2AD;
-    }
-
-    p {
-      padding: 0px 20px;
-      max-width: 900px;
-      margin: 0px auto;
-      line-height: 26px;
-    }
-
-    .logoexploration {
-      padding: 20px 0px;
-      color: white;
-      text-align: center;
-      background-color: #F6F6F6;
-    }
-
-     .ribbon {
-      padding: 20px 0px;
-      color: white;
-      text-align: center;
-      background-color: #00A2AD;
-    }
-
-    .logostructure {
-      padding: 20px 0px;
-      color: white;
-      text-align: center;
-      background-color: #F6F6F6;
-    }
-
-    .colors {
-      background-color: #333333;
-      padding: 20px 0px;
-      overflow: hidden;
-    }
-
-    .video-frame {
-      background-image: url(img/frame.png);
-      background-size: 359px, 503px;
-      padding-top: 51px;
-      width: 358px;
-      height: 503px;
-    }
-
-    .video-card {
-      display: inline-block;
-      margin: 60px 60px;
-      width: 359px;
-    }
-
-    .sidetext-right {
-      float: right;
-      margin: 77px 0 0 77px;
-      width: 360px;
-      height: 250px;
-    }
-
-    .sidetext-right h2 {
-      margin-bottom: 12px;
-      font-size: 32px;
-      font-weight: normal;
-      text-align: left;
-      color: #00A2AD;
-    }
-    .sidetext-right p {
-      margin: 0;
-      padding: 0;
-    }
-
-    .sidetext-left {
-      float: left;
-      margin: 77px 77px 0 0;
-      width: 360px;
-      height: 250px;
-    }
-
-    .sidetext-left h2 {
-      margin-bottom: 12px;
-      font-size: 32px;
-      font-weight: normal;
-      text-align: left;
-      color: #00A2AD;
-    }
-    .sidetext-left p {
-      margin: 0;
-      padding: 0;
-    }
-
-  </style>
+  <link rel="stylesheet" type="text/css" href="sharepoint.css">
 </head>
 
 <body>
-  <div class="header">
-    <div class="inner">
-      <a href="../../index.html">
-        <img class="logo" src="../../image/home/redLogo.png" alt="home" width="40" height="40">
-      </a>
-      <div class="links">
-        <a href="https://www.linkedin.com/in/kate-von-houck-aa966466/" target="_blank">linkedin</a>
-        <a href="/Kate%20von%20Houck.pdf">resume</a>
-        <a href="mailto:kate4china@gmail.com">contact</a>
-      </div>
-    </div>
-  </div>
-
   <div id="headerimage">
     <img src="img/sharepointHeader.png" width="616" height="482">
   </div>
 
-  <div id="overlayer">
-
+  <div id="overlayer" class="sharepoint-content">
     <h1>SHAREPOINT SITE PERFORMANCE</h1>
 
     <p>
         The main goal of this project is to show to owners of the websites what their home page performance is being impacted by. This tool is very helpful to drive the conversation of owners with admins to enable CDN and review their network. This tool will improve site performance by showing the list of recommendations to site owners. And allowing users to access the network score in one or in multiple locations.
     </p>
 
-    <div class="spacer" style="height:42px"></div>
+    <div class="spacer"></div>
 
     <div class="ribbon">
         Sharepoint site performance <br>
@@ -210,7 +27,7 @@
         Date: 2019
     </div>
     <div class="howToUse" style="background-color: #F8F6F6">
-      <img src="img/howToUse.png" width="1200" height="436" style="margin: 0px auto 0px auto">
+      <img src="img/howToUse.png" width="1200" height="436">
     </div>
 
     <h1>PROBLEM</h1>
@@ -229,62 +46,56 @@
     </p>
 
     <h1>PERSONAS</h1>
-    <img src="img/personas.png" width="810" height="375" style="margin: 0px auto 0px auto">
+    <img src="img/personas.png" width="810" height="375">
 
     <h1>INTEGRATION</h1>
-    <img src="img/tool1.png" width="1006" height="689" style="margin: 0px auto 0px auto">
+    <img src="img/tool1.png" width="1006" height="689">
 
     <h1>STARTING POINT</h1>
-    <img src="img/tool2.png" width="1082" height="663" style="margin: 0px auto 0px auto">
+    <img src="img/tool2.png" width="1082" height="663">
 
-    <div class="spacer" style="height:42px"></div>
+    <div class="spacer"></div>
 
     <div style="background-color: #F2F6FF">
-        <img src="img/process.png" width="1200" height="513" style="margin: 0px auto 0px auto">
+        <img src="img/process.png" width="1200" height="513">
     </div>
 
     <h1>ENTRY POINT</h1>
-    <img src="img/entryPoint.png" width="800" style="margin: 0px auto 0px auto">
+    <img src="img/entryPoint.png" width="800">
 
     <h1>ITERATION 1</h1>
-    <img src="img/sample1.png" width="800" style="margin: 0px auto 0px auto">
-    <div class="spacer" style="height:42px"></div>
-    <img src="img/sample3.png" width="800" style="margin: 0px auto 0px auto">
-    <div class="spacer" style="height:42px"></div>
-    <img src="img/sample2.png" width="800" style="margin: 0px auto 0px auto">
+    <img src="img/sample1.png" width="800">
+    <div class="spacer"></div>
+    <img src="img/sample3.png" width="800">
+    <div class="spacer"></div>
+    <img src="img/sample2.png" width="800">
 
     <h1>DARK THEME</h1>
-
-    <img src="img/sample4.png" width="800" style="margin: 0px auto 0px auto">
-    <div class="spacer" style="height:42px"></div>
-    <img src="img/sample5.png" width="800" style="margin: 0px auto 0px auto">
+    <img src="img/sample4.png" width="800">
+    <div class="spacer"></div>
+    <img src="img/sample5.png" width="800">
 
     <h1>ITERATION 2</h1>
-
-    <img src="img/sample6.png" width="800" style="margin: 0px auto 0px auto">
-    <div class="spacer" style="height:42px"></div>
-    <img src="img/sample7.png" width="800" style="margin: 0px auto 0px auto">
-    <div class="spacer" style="height:42px"></div>
-    <img src="img/sample8.png" width="800" style="margin: 0px auto 0px auto">
+    <img src="img/sample6.png" width="800">
+    <div class="spacer"></div>
+    <img src="img/sample7.png" width="800">
+    <div class="spacer"></div>
+    <img src="img/sample8.png" width="800">
 
     <h1>ACCESSIBILITY TAB ORDER</h1>
-    <img src="img/sample9.png" width="800" style="margin: 0px auto 0px auto">
+    <img src="img/sample9.png" width="800">
 
     <h1>ACCESSIBILITY SCREEN READER</h1>
-    <img src="img/sample10.png" width="800" style="margin: 0px auto 0px auto">
-    <div class="spacer" style="height:42px"></div>
+    <img src="img/sample10.png" width="800">
+    <div class="spacer"></div>
 
     <div style="text-align: center">
       <a class="redButton" href="mailto:kate4chian@gmail.com">
         CONTACT ME
       </a>
     </div>
-
-    <div class="footer">
-      Copyright 2020 Kate von Houck. All Rights Reserved
-    </div>
-
   </div>
 
+  <script src="../../components.js"></script>
 </body>
 </html>

@@ -1,3 +1,20 @@
+/* CSS Variables */
+:root {
+  --primary-color: #CE0B24;
+  --text-dark: #333333;
+  --text-gray: #6E6C6C;
+  --text-light: #989898;
+  --background-light: #F1F0F0;
+  --hover-overlay: rgba(0, 0, 0, 0.6);
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+  --spacing-xl: 2rem;
+  --spacing-xxl: 4rem;
+  --header-padding: 1.25rem;
+}
+
 /* Base styles */
 @font-face {
   font-family: "Apercu";
@@ -18,14 +35,30 @@ body {
   font-size: 18px;
 }
 
+/* Button Styles */
+.redButton {
+    display: inline-block;
+    color: var(--text-gray);
+    font-size: 1.125rem;
+    text-decoration: none;
+    border: 2px solid var(--primary-color);
+    padding: 0.625rem 0;
+    width: 12.5rem;
+    border-radius: 12.5rem;
+    margin-top: 2rem;
+    transition: all 500ms;
+    text-align: center;
+}
+
+.redButton:hover {
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
+}
+
 /* Header Styles */
 .site-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     background: white;
-    z-index: 1000;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid #C4C4C4;
     height: calc(2.5rem + (var(--header-padding) * 2));

@@ -1,0 +1,171 @@
+/* Import common styles */
+@import url('../../common.css');
+
+/* Project Specific Styles */
+#headerimage {
+    position: fixed;
+    top: calc(2.5rem + (var(--header-padding) * 2));
+    z-index: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    background: #F5F7F8;
+    height: 667px;
+}
+
+#headerimage img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#overlayer {
+    padding-top: 1px;
+    position: relative;
+    background-color: white;
+    z-index: 1;
+    margin-top: 700px;
+}
+
+.sharepoint-content img {
+    display: block;
+    margin: 0px auto;
+    max-width: 80%;
+    height: auto;
+}
+
+.sharepoint-content h1 {
+    margin-top: 77px;
+    margin-bottom: 38px;
+    font-size: 32px;
+    font-weight: normal;
+    text-align: center;
+    color: #00A2AD;
+}
+
+.sharepoint-content p {
+    padding: 0px 20px;
+    max-width: 900px;
+    margin: 0px auto;
+    line-height: 26px;
+}
+
+.logoexploration {
+    padding: 20px 0px;
+    color: white;
+    text-align: center;
+    background-color: #F6F6F6;
+}
+
+.ribbon {
+    padding: 20px 0px;
+    color: white;
+    text-align: center;
+    background-color: #00A2AD;
+}
+
+.logostructure {
+    padding: 20px 0px;
+    color: white;
+    text-align: center;
+    background-color: #F6F6F6;
+}
+
+.colors {
+    background-color: #333333;
+    padding: 20px 0px;
+    overflow: hidden;
+}
+
+.video-frame {
+    background-image: url(img/frame.png);
+    background-size: 359px, 503px;
+    padding-top: 51px;
+    width: 358px;
+    height: 503px;
+}
+
+.video-card {
+    display: inline-block;
+    margin: 60px 60px;
+    width: 359px;
+}
+
+.sidetext-right {
+    float: right;
+    margin: 77px 0 0 77px;
+    width: 360px;
+    height: 250px;
+}
+
+.sidetext-right h2 {
+    margin-bottom: 12px;
+    font-size: 32px;
+    font-weight: normal;
+    text-align: left;
+    color: #00A2AD;
+}
+
+.sidetext-right p {
+    margin: 0;
+    padding: 0;
+}
+
+.sidetext-left {
+    float: left;
+    margin: 77px 77px 0 0;
+    width: 360px;
+    height: 250px;
+}
+
+.sidetext-left h2 {
+    margin-bottom: 12px;
+    font-size: 32px;
+    font-weight: normal;
+    text-align: left;
+    color: #00A2AD;
+}
+
+.sidetext-left p {
+    margin: 0;
+    padding: 0;
+}
+
+.spacer {
+    height: 42px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 700px) {
+    .video-card {
+        margin: 60px 0px !important;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    #headerimage {
+        height: 300px !important;
+    }
+    
+    #overlayer {
+        margin-top: 370px !important;
+    }
+
+    .video-frame {
+        background-size: 200px, 280px !important;
+        padding-top: 0px !important;
+        width: 200px !important;
+        height: 280px !important;
+    }
+
+    .video-card {
+        margin: 60px 0px !important;
+        width: 200px !important;
+    }
+
+    video {
+        width: 164px;
+        height: 280px;
+    }
+}

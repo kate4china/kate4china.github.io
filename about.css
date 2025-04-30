@@ -1,0 +1,69 @@
+/* Import common styles */
+@import url('common.css');
+
+/* Bio Section */
+.bio {
+    text-align: center;
+    padding: var(--spacing-xxl) 0;
+    max-width: 37.5rem;
+    margin: 0 auto;
+}
+
+.bio img {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    margin-bottom: var(--spacing-xl);
+}
+
+.bio p {
+    color: var(--text-gray);
+    font-size: 1.125rem;
+    line-height: 1.6;
+    margin: 0 auto;
+    max-width: 30rem;
+}
+
+/* Contact Section */
+.hitMeUp {
+    text-align: center;
+    padding: var(--spacing-xxl) 0;
+    background-color: var(--background-light);
+}
+
+.hitMeUp .inner {
+    max-width: 37.5rem;
+    margin: 0 auto;
+}
+
+.hitMeUp h1 {
+    color: var(--primary-color);
+    font-size: 2.25rem;
+    margin-bottom: var(--spacing-lg);
+}
+
+.hitMeUp p {
+    color: var(--text-gray);
+    font-size: 1.125rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+/* Responsive Design */
+@media (max-width: 40rem) {
+    .bio {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+    
+    .bio img {
+        width: 8rem;
+        height: 8rem;
+    }
+    
+    .bio p {
+        font-size: 1rem;
+    }
+    
+    .hitMeUp {
+        padding: var(--spacing-xl) var(--spacing-md);
+    }
+} 
