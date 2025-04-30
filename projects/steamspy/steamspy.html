@@ -3,154 +3,17 @@
 
 <head>
   <title>SteamSpy UX/UI Redesign by Kate von Houck</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
   <meta name="viewport" content="width=device-width">
-  <link href='../../style.css' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="../../common.css">
-  <style>
-    @media screen and (max-width: 400px) {
-      #headerimage {
-        height: 300px !important;
-      }
-      #overlayer {
-        margin-top: 370px !important;
-      }
-      #video iframe {
-        max-width: 90% !important;
-      }
-      .video-card {
-        margin: 60px 0px !important;
-      }
-
-      video {
-        width: 90% !important;
-        height: auto;
-      }
-    }
-
-    body {
-      overflow-x: hidden;
-      background-color: white;
-      line-height: 28px;
-    }
-
-    #headerimage {
-      position: fixed;
-      top: 76px;
-      z-index: 0;
-      left: 50%;
-      transform: translate(-50%, 0);
-      width: 100%;
-      background: linear-gradient(to bottom, #FFFFFF 0%, #ECECEC 100%);
-      height: 632px;
-    }
-
-    #headerimage img {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-    }
-
-    #overlayer {
-      padding-top: 1px;
-      margin-top: 700px;
-      position: relative;
-      background-color: white;
-      z-index: 1;
-    }
-
-    img {
-      display: block;
-      margin: 0px auto;
-      max-width: 80%;
-      height: auto;
-    }
-
-    h1 {
-      margin-top: 100px;
-      margin-bottom: 38px;
-      font-size: 28px;
-      font-weight: normal;
-      text-align: center;
-      color: #030303;
-    }
-
-    p {
-      padding: 0px 20px;
-      max-width: 600px;
-      margin: 0px auto;
-    }
-
-    .ribbon {
-      padding: 20px 0px;
-      color: white;
-      text-align: center;
-      background-color: #36474f;
-    }
-
-    .colors {
-      background-color: black;
-      padding: 20px 0px;
-      overflow: hidden;
-    }
-
-    .video-frame {
-      background-image: url(img/frame.png);
-      background-size: 100%;
-      padding: 61px 17px;
-    }
-
-    .video-card {
-      display: inline-block;
-      margin: 60px 60px;
-      width: 260px;
-      height: 480px;
-    }
-
-    #video {
-      background: black;
-      padding: 50px 0px;
-    }
-
-    #video iframe {
-      display: block;
-      margin: 0px auto;
-      max-width: 640px;
-    }
-
-    video {
-      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
-    }
-
-    .redesign {
-      margin-bottom: 60px;
-      margin-top: 30px;
-      box-shadow: 0 1px 3px 0 rgba(0, 0, 0, .2), 0 1px 1px 0 rgba(0, 0, 0, .14), 0 2px 1px -1px rgba(0, 0, 0, .12);
-    }
-  </style>
+  <link rel="stylesheet" type="text/css" href="steamspy.css">
+  <script src="../../components.js"></script>
 </head>
 
 <body>
-  <div class="header">
-    <div class="inner">
-      <a href="../../index.html">
-        <img class="logo" src="../../image/home/redLogo.png" alt="home" width="40" height="40">
-      </a>
-      <div class="links">
-        <a href="https://www.linkedin.com/in/kate-von-houck-aa966466/" target="_blank">linkedin</a>
-        <a href="/Kate%20von%20Houck.pdf">resume</a>
-        <a href="mailto:kate4china@gmail.com">contact</a>
-      </div>
-    </div>
-  </div>
-
   <div id="headerimage">
     <img src="../../image/steamspy.png" width="1200" height="600">
   </div>
 
   <div id="overlayer">
-
     <h1>Steam Spy</h1>
     <p>
       <a href="https://steamspy.com/">Steamspy.com</a> is a website that shows how many people own or play a particular game. It has stats on total playtime, total owners, youtube viewers and twitch streamers. Steam Spy can be used by regular players to
@@ -218,7 +81,7 @@
     <h1>REDESIGN THOUGHTS</h1>
 
     <p>
-      In the original site the filters are hard to understand. You couldn’t filter by a year range, total players or total sales. I replaced this with filter where you can drag both start and end of the range.
+      In the original site the filters are hard to understand. You couldn't filter by a year range, total players or total sales. I replaced this with filter where you can drag both start and end of the range.
     </p>
     <img class="redesign" src='img/redesign1.png' width=800 height=400>
 
@@ -228,7 +91,7 @@
     <img class="redesign" src='img/redesign2.png' width=800 height=400>
 
     <p>
-      Default view for steam spy is a list of games. I think that it works only for game developers, but not for players. Because players would like to see beautiful posters of the game and bigger pictures. That’s why I created the gallery and the list views for users to pick which one they prefer.
+      Default view for steam spy is a list of games. I think that it works only for game developers, but not for players. Because players would like to see beautiful posters of the game and bigger pictures. That's why I created the gallery and the list views for users to pick which one they prefer.
     </p>
     <img class="redesign" src='img/redesign3.png' width=800 height=400>
 
@@ -255,10 +118,6 @@
       <a class="redButton" href="mailto:kate4chian@gmail.com">
         CONTACT ME
       </a>
-    </div>
-
-    <div class="footer">
-      Copyright 2020 Kate von Houck. All Rights Reserved
     </div>
   </div>
 </body>
