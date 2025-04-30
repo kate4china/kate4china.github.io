@@ -1,25 +1,43 @@
 /* Import common styles */
-@import url('common.css');
+@import url('../../common.css');
 
 /* Bio Section */
 .bio {
     text-align: center;
-    padding: var(--spacing-xxl) 0;
-    max-width: 37.5rem;
-    margin: 0 auto;
+    padding: 120px 20px 0px;
+    max-width: 600px;
+    margin: 0px auto;
+    line-height: 28px;
 }
 
 .bio img {
-    width: 10rem;
-    height: 10rem;
+    width: 12rem;
+    height: 12rem;
     border-radius: 50%;
     margin-bottom: var(--spacing-xl);
+    border: 4px solid var(--primary-color);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.bio h1 {
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    font-weight: normal;
+    letter-spacing: -0.5px;
+}
+
+.bio h2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 2rem;
+    font-weight: normal;
 }
 
 .bio p {
     color: var(--text-gray);
     font-size: 1.125rem;
-    line-height: 1.6;
+    line-height: 1.8;
     margin: 0 auto;
     max-width: 30rem;
 }
@@ -27,43 +45,74 @@
 /* Contact Section */
 .hitMeUp {
     text-align: center;
-    padding: var(--spacing-xxl) 0;
-    background-color: var(--background-light);
+    max-width: 600px;
+    margin: 100px auto 50px;
+    padding: 0 20px;
 }
 
-.hitMeUp .inner {
-    max-width: 37.5rem;
-    margin: 0 auto;
-}
-
-.hitMeUp h1 {
-    color: var(--primary-color);
-    font-size: 2.25rem;
-    margin-bottom: var(--spacing-lg);
+.hitMeUp h2 {
+    font-size: 2.5rem;
+    color: var(--text-dark);
+    margin-bottom: 20px;
+    font-weight: normal;
+    letter-spacing: -0.5px;
 }
 
 .hitMeUp p {
     color: var(--text-gray);
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.6;
+}
+
+/* Original Button Styles */
+.redButton {
+    display: inline-block;
+    color: var(--text-gray);
     font-size: 1.125rem;
-    margin-bottom: var(--spacing-xs);
+    text-decoration: none;
+    border: 2px solid var(--primary-color);
+    padding: 0.625rem 0;
+    width: 12.5rem;
+    border-radius: 12.5rem;
+    margin-top: 2rem;
+    transition: all 500ms;
+    text-align: center;
+}
+
+.redButton:hover {
+    background: var(--primary-color);
+    color: white;
+    text-decoration: none;
 }
 
 /* Responsive Design */
-@media (max-width: 40rem) {
-    .bio {
-        padding: var(--spacing-xl) var(--spacing-md);
-    }
-    
-    .bio img {
-        width: 8rem;
-        height: 8rem;
-    }
-    
-    .bio p {
-        font-size: 1rem;
-    }
-    
+@media screen and (max-width: 768px) {
     .hitMeUp {
-        padding: var(--spacing-xl) var(--spacing-md);
+        margin: 80px auto 40px;
+    }
+    
+    .hitMeUp h2 {
+        font-size: 2rem;
+    }
+    
+    .hitMeUp p {
+        font-size: 1.125rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .hitMeUp {
+        margin: 60px auto 30px;
+    }
+    
+    .hitMeUp h2 {
+        font-size: 1.75rem;
+    }
+    
+    .redButton {
+        width: 10rem;
+        font-size: 1rem;
     }
 } 

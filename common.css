@@ -97,12 +97,13 @@ body {
     color: var(--text-gray);
     text-decoration: none;
     font-size: 18px;
-    transition: color 0.3s ease;
+    transition: all 0.3s ease;
     text-transform: lowercase;
 }
 
 .nav-links a:hover {
     color: var(--text-dark);
+    font-weight: bold;
 }
 
 /* Section Styles */
