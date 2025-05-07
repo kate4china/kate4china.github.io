@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Connect - Kate von Houck</title>
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" type="text/css" href="connect.css">
+  <script src="components.js"></script>
+</head>
+
+<body>
+  <div class="connect-container">
+    <div class="connect-header">
+      <h1>Let's Work Together</h1>
+      <p>Fill out the form below to start our conversation about your project. I'll get back to you within 24 hours.</p>
+    </div>
+
+    <div class="contact-form-section">
+      <form class="contact-form">
+        <div class="form-row">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="John" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Doe" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="businessName">Business Name</label>
+            <input type="text" id="businessName" name="businessName" placeholder="Your Company Name" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="john@company.com" required>
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="location">Where are you located?</label>
+            <input type="text" id="location" name="location" placeholder="City, Country" required>
+          </div>
+          <div class="form-group">
+            <label for="website">Website</label>
+            <input type="url" id="website" name="website" placeholder="https://yourwebsite.com">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="form-group">
+            <label for="instagram">Instagram</label>
+            <input type="text" id="instagram" name="instagram" placeholder="@yourhandle">
+          </div>
+          <div class="form-group">
+            <label for="businessAge">How long have you been in business?</label>
+            <select id="businessAge" name="businessAge" required>
+              <option value="">Select an option</option>
+              <option value="not-launched">I haven't launched yet</option>
+              <option value="0-3">0-3 years</option>
+              <option value="4-7">4-7 years</option>
+              <option value="8+">8+ years</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="projectDescription">Please describe your project</label>
+          <textarea id="projectDescription" name="projectDescription" rows="4" placeholder="Tell me about your project goals, timeline, and any specific requirements..." required></textarea>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="decisionMaker">Are you the lead decision maker?</label>
+          <textarea id="decisionMaker" name="decisionMaker" rows="2" placeholder="If not, who else is involved in the hiring decision?" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Have you ever worked with a product designer before?</label>
+          <div class="radio-group">
+            <label>
+              <input type="radio" name="workedWithDesigner" value="yes" required> Yes, I have experience working with designers
+            </label>
+            <label>
+              <input type="radio" name="workedWithDesigner" value="no" required> No, this is my first time working with a designer
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label>What type of design support are you looking for?</label>
+          <div class="checkbox-group">
+            <label>
+              <input type="checkbox" name="designSupport" value="mobile"> Mobile App Design
+            </label>
+            <label>
+              <input type="checkbox" name="designSupport" value="website"> Website Design
+            </label>
+            <label>
+              <input type="checkbox" name="designSupport" value="systems"> Design Systems
+            </label>
+            <label>
+              <input type="checkbox" name="designSupport" value="pitch"> Pitch Deck Designs
+            </label>
+            <label>
+              <input type="checkbox" name="designSupport" value="branding"> Branding Design
+            </label>
+            <label>
+              <input type="checkbox" name="designSupport" value="help"> I need help deciding
+            </label>
+          </div>
+        </div>
+
+        <div class="form-group full-width">
+          <label for="whyWorkWithMe">Why do you want to work with me?</label>
+          <textarea id="whyWorkWithMe" name="whyWorkWithMe" rows="3" placeholder="What aspects of my work or approach appeal to you?" required></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="budgetComfort">My unlimited design services are packaged as a subscription model (flat fee of $6,000/month). Are you comfortable with this?</label>
+          <select id="budgetComfort" name="budgetComfort" required>
+            <option value="">Select an option</option>
+            <option value="yes">Yes, this works for my budget</option>
+            <option value="no">No, this is outside my budget</option>
+            <option value="maybe">I need to discuss this further</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="discovery">How did you discover my services?</label>
+          <select id="discovery" name="discovery" required>
+            <option value="">Select an option</option>
+            <option value="google">Google Search</option>
+            <option value="social">Social Media</option>
+            <option value="referral">Referral</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="form-group full-width" id="referralField" style="display: none;">
+          <label for="referralDetails">Who referred you?</label>
+          <input type="text" id="referralDetails" name="referralDetails" placeholder="Name of the person who referred you">
+        </div>
+
+        <div class="form-submit">
+          <button type="submit" class="submit-button">SUBMIT</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    // Show/hide referral field based on discovery selection
+    document.getElementById('discovery').addEventListener('change', function() {
+      const referralField = document.getElementById('referralField');
+      referralField.style.display = this.value === 'referral' ? 'block' : 'none';
+    });
+  </script>
+</body>
+</html> 

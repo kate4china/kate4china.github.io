@@ -1,0 +1,223 @@
+/* Import common styles */
+@import url('common.css');
+
+/* Connect Page Layout */
+.connect-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 80px 20px;
+  background-color: #FAFAFA;
+  min-height: 100vh;
+}
+
+.connect-header {
+  text-align: center;
+  margin-bottom: 60px;
+  padding: 0 20px;
+}
+
+.connect-header h1 {
+  font-size: 3.5rem;
+  color: #2D2D2D;
+  margin-bottom: 24px;
+  font-weight: 600;
+  letter-spacing: -0.5px;
+}
+
+.connect-header p {
+  color: #666;
+  font-size: 1.25rem;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
+/* Contact Form Styles */
+.contact-form-section {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.contact-form {
+  background: white;
+  padding: 48px;
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+.form-row {
+  display: flex;
+  gap: 24px;
+  margin-bottom: 24px;
+}
+
+.form-group {
+  flex: 1;
+  margin-bottom: 24px;
+}
+
+.form-group.full-width {
+  width: 100%;
+}
+
+.form-group label {
+  display: block;
+  font-size: 15px;
+  color: #2D2D2D;
+  margin-bottom: 8px;
+  font-weight: 500;
+  letter-spacing: -0.2px;
+}
+
+.form-group label::after {
+  content: '*';
+  color: #FF512F;
+  margin-left: 4px;
+}
+
+.form-group label[for="website"]::after,
+.form-group label[for="instagram"]::after {
+  content: '';
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="url"],
+.form-group select,
+.form-group textarea {
+  width: 100%;
+  padding: 14px 16px;
+  border: 1.5px solid #E0E0E0;
+  border-radius: 8px;
+  font-size: 15px;
+  color: #2D2D2D;
+  transition: all 0.2s ease;
+  background-color: #FAFAFA;
+}
+
+.form-group input:hover,
+.form-group select:hover,
+.form-group textarea:hover {
+  border-color: #BDBDBD;
+  background-color: #F5F5F5;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #007AFF;
+  background-color: white;
+  box-shadow: 0 0 0 3px rgba(0,122,255,0.1);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+.radio-group,
+.checkbox-group {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+  background-color: #FAFAFA;
+  border-radius: 8px;
+  border: 1.5px solid #E0E0E0;
+}
+
+.radio-group label,
+.checkbox-group label {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-weight: normal;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.radio-group label::after,
+.checkbox-group label::after {
+  content: '';
+}
+
+.radio-group input[type="radio"],
+.checkbox-group input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #007AFF;
+}
+
+.form-submit {
+  margin-top: 48px;
+  text-align: center;
+}
+
+.submit-button {
+  display: inline-block;
+  color: #6E6C6C;
+  font-size: 1.125rem;
+  text-decoration: none;
+  border: 2px solid #CE0B24;
+  padding: 0.625rem 0;
+  width: 12.5rem;
+  border-radius: 12.5rem;
+  margin-top: 2rem;
+  transition: all 500ms;
+  text-align: center;
+  background: transparent;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background: #CE0B24;
+  color: white;
+  text-decoration: none;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .connect-container {
+    padding: 40px 20px;
+  }
+  
+  .connect-header {
+    margin-bottom: 40px;
+  }
+  
+  .connect-header h1 {
+    font-size: 2.5rem;
+  }
+  
+  .form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .contact-form {
+    padding: 32px 24px;
+  }
+
+  .radio-group,
+  .checkbox-group {
+    padding: 12px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .connect-container {
+    padding: 30px 15px;
+  }
+  
+  .connect-header h1 {
+    font-size: 2rem;
+  }
+
+  .contact-form {
+    padding: 24px 16px;
+  }
+} 
