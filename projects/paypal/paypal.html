@@ -226,16 +226,21 @@
     <div class="spacer"></div>
 
     <h1 style="color: #007AFF; margin-top: 60px; margin-bottom: 40px;">OUTCOME</h1>
-    <div style="max-width: 800px; margin: 0 auto;">
-      <h2 style="color: #007AFF; font-size: 24px; margin-bottom: 30px; text-align: left; padding-left: 0;">Current Results</h2>
-      <p style="text-align: left; line-height: 1.9; font-size: 19px; color: #1A1A1A; font-weight: 500; letter-spacing: -0.01em; margin: 0; padding-left: 0;">
-        The problem was successfully resolved by implementing a simplified SSO login process for enterprise users. The solution received overwhelmingly positive feedback from users, demonstrating its effectiveness in addressing the core challenges of enterprise access management.
-      </p>
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; gap: 40px; align-items: flex-start;">
+      <div style="flex: 1;">
+        <h2 style="color: #007AFF; font-size: 24px; margin-bottom: 30px; text-align: left; padding-left: 0;">Current Results</h2>
+        <p style="text-align: left; line-height: 1.9; font-size: 19px; color: #1A1A1A; font-weight: 500; letter-spacing: -0.01em; margin: 0; padding-left: 0;">
+          The problem was successfully resolved by implementing a simplified SSO login process for enterprise users. The solution received overwhelmingly positive feedback from users, demonstrating its effectiveness in addressing the core challenges of enterprise access management.
+        </p>
 
-      <h2 style="color: #007AFF; font-size: 24px; margin-top: 60px; margin-bottom: 30px; text-align: left; padding-left: 0;">Future Iterations</h2>
-      <p style="text-align: left; line-height: 1.9; font-size: 19px; color: #1A1A1A; font-weight: 500; letter-spacing: -0.01em; margin: 0; padding-left: 0;">
-        In future iterations, the SSO login process will be further simplified for users logging in with cookies. The enhancement will eliminate the need for users to input their email address manually. By pre-filling the email address field, users will experience an even faster and more streamlined login process, reducing friction and improving overall user experience.
-      </p>
+        <h2 style="color: #007AFF; font-size: 24px; margin-top: 60px; margin-bottom: 30px; text-align: left; padding-left: 0;">Future Iterations</h2>
+        <p style="text-align: left; line-height: 1.9; font-size: 19px; color: #1A1A1A; font-weight: 500; letter-spacing: -0.01em; margin: 0; padding-left: 0;">
+          In future iterations, the SSO login process will be further simplified for users logging in with cookies. The enhancement will eliminate the need for users to input their email address manually. By pre-filling the email address field, users will experience an even faster and more streamlined login process, reducing friction and improving overall user experience.
+        </p>
+      </div>
+      <div style="flex: 1; background: white; padding: 20px;">
+        <img src="img/SSO Login.png" alt="SSO Login Interface" style="width: 100%; height: auto;" class="scroll-image">
+      </div>
     </div>
 
     <div style="text-align: center; padding: 60px 0 100px 0;">
@@ -244,5 +249,21 @@
       </a>
     </div>
   </div>
+
+  <script>
+    // Intersection Observer for scroll animations
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, {
+      threshold: 0.1
+    });
+
+    // Observe all elements with scroll-image class
+    document.querySelectorAll('.scroll-image').forEach((el) => observer.observe(el));
+  </script>
 </body>
 </html> 
